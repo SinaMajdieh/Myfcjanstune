@@ -5,8 +5,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pattack/fcjanstun/team"
-	"github.com/pattack/rcss"
+	"github.com/SinaMajdieh/Myfcjanstune/team"
+	rcss "github.com/SinaMajdieh/Myrcss"
 )
 
 var (
