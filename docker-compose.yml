@@ -1,0 +1,8 @@
+version: '2.3'
+services:
+  fcjanstun:
+    image: registry.pattack.org/fcjanstun:latest
+    volumes:
+      - ./configs/fcjanstun:/etc/fcjanstun
+    environment:
+      HOSTNAME: fcjanstun.pat

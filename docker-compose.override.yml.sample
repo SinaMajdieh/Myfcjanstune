@@ -1,0 +1,16 @@
+version: '2.3'
+services:
+  fcjanstun:
+    build:
+      context: .
+      dockerfile: Dockerfile-dev
+    image: registry.pattack.org/library/golang:develop
+    working_dir: /go/src/github.com/pattack/fcjanstun
+    volumes:
+    - $GOPATH/src:/go/src
+
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: 172.22.26.224/27
