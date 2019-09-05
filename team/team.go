@@ -3,7 +3,7 @@ package team
 import (
 	"fmt"
 
-	"github.com/pattack/rcss"
+	rcss "github.com/SinaMajdieh/Myrcss"
 )
 
 type janstun struct {
