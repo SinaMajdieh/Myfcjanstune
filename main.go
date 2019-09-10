@@ -26,11 +26,12 @@ func main() {
 
 	log.Printf("server address: %s\n", cfg.serverAddress)
 	log.Printf("initalizing `%s` team\n", cfg.teamName)
-
-	if srv, err := rcss.NewServer(cfg.serverAddress); err != nil {
-		panic(err)
-	} else if err := srv.Join(team.NewTeam(cfg.teamName)); err != nil {
-		panic(err)
+	for i := 0; i < 11; i++ {
+		if srv, err := rcss.NewServer(cfg.serverAddress); err != nil {
+			panic(err)
+		} else if err := srv.Join(team.NewTeam(cfg.teamName)); err != nil {
+			panic(err)
+		}
 	}
 
 	// TODO: Remove this. Wait for stop signal and do graceful shutdown instead
